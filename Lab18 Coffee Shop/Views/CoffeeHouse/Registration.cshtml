@@ -5,39 +5,52 @@
 
 @model Lab18_Coffee_Shop.Models.RegisterUser
 
-<h1>Registration</h1>
-
+<h1 style="color: white; text-align:center;">Registration</h1>
 
 @using (var form = Html.BeginForm())
 {
-    <div class="inputData">
+    <div class="inputData" style="color: white; font-size:larger; text-align:center;">
+
         <div>
             @Html.LabelFor(m => m.FirstName, "First Name :")
             @Html.TextBoxFor(m => m.FirstName)
-
+            @Html.ValidationMessageFor(m => m.FirstName)
         </div>
         <div>
             @Html.LabelFor(m => m.LastName, "Last Name :")
             @Html.TextBoxFor(m => m.LastName)
+            @Html.ValidationMessageFor(m => m.LastName)
         </div>
         <div>
             @Html.LabelFor(m => m.Email, "Email :")
             @Html.TextBoxFor(m => m.Email)
+            @Html.ValidationMessageFor(m => m.Email)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.DOB, "DOB :")
+            @Html.TextBoxFor(m => m.DOB, new { @type = "date" })
+            @Html.ValidationMessageFor(m => m.DOB)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.UserName, "UserName :")
+            @Html.TextBoxFor(m => m.UserName)
+            @Html.ValidationMessageFor(m => m.UserName)
         </div>
         <div>
             @Html.LabelFor(m => m.Password, "Password :")
             @Html.TextBoxFor(m => m.Password)
+            @Html.ValidationMessageFor(m => m.Password)
         </div>
         <input type="submit" value="Submit" />
     </div>
-}   
+}
 
 <style>
     body {
         background-image: url('../../coffee4.jpg');
         background-size: cover;
     }
-</style> 
+</style>
 
 
 

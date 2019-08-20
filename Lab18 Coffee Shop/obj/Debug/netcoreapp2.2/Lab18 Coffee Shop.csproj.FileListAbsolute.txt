@@ -30,3 +30,4 @@ C:\Users\Jense\source\repos\Lab18 Coffee Shop\Lab18 Coffee Shop\obj\Debug\netcor
 C:\Users\Jense\source\repos\Lab18 Coffee Shop\Lab18 Coffee Shop\obj\Debug\netcoreapp2.2\Lab18 Coffee Shop.csproj.CopyComplete
 C:\Users\Jense\source\repos\Lab18 Coffee Shop\Lab18 Coffee Shop\obj\Debug\netcoreapp2.2\Razor\Views\CoffeeHouse\Registration.g.cshtml.cs
 C:\Users\Jense\source\repos\Lab18 Coffee Shop\Lab18 Coffee Shop\obj\Debug\netcoreapp2.2\Razor\Views\CoffeeHouse\Welcome.g.cshtml.cs
+C:\Users\Jense\source\repos\Lab18 Coffee Shop\Lab18 Coffee Shop\obj\Debug\netcoreapp2.2\Razor\Views\CoffeeHouse\UserInfo.g.cshtml.cs

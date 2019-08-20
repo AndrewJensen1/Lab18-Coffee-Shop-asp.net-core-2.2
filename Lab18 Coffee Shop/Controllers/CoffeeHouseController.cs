@@ -21,7 +21,12 @@ namespace Lab18_Coffee_Shop.Controllers
         [HttpPost]
         public IActionResult Registration(RegisterUser newUser)
         {
-            return RedirectToAction("Welcome", newUser);
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Welcome", newUser);
+
+            }
+            return View(newUser);
         }
 
         public IActionResult Welcome(RegisterUser user)
@@ -29,6 +34,24 @@ namespace Lab18_Coffee_Shop.Controllers
             return View(user);
         }
 
+        [HttpGet]
+        public IActionResult UserInfo()
+        {
+            return View(new User());
+        }
+        [HttpPost]
+        public IActionResult UserInfo(RegisterUser newUser)
+        {
+            if (ModelState.IsValid)
+            {
+                return View(newUser);
 
+            }
+            return RedirectToAction("Registration",newUser);
+        }
+        public IActionResult MyAccount(User user)
+        {
+            return View(user);
+        }
     }
 }
