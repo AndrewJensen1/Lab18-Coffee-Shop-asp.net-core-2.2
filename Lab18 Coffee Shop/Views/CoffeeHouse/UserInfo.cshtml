@@ -2,14 +2,22 @@
 @{
     ViewData["Title"] = "UserInfo";
 }
-@model Lab18_Coffee_Shop.Models.User
+@model Lab18_Coffee_Shop.Models.RegisterUser
 
 <h1>UserInfo</h1>
 
 <p>
-    @Model.FirstName
-    @Model.LastName
-    @Model.Email
-    @Model.DOB
-    @Model.UserName
+   USERNAME: @Model.UserName
+</p>
+<p>
+   FIRST NAME: @Model.FirstName
+</p>
+<p>
+   LAST NAME: @Model.LastName
+</p>
+<p>
+   EMAIL: @Model.Email
+</p>
+<p>
+   Date of Birth: @Model.DOB
 </p>

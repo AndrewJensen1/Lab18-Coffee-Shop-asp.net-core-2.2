@@ -65,8 +65,10 @@ body {
 }
 .inputData input {
     margin-left: 9em;
+    margin-bottom: 5px;
 }
 
 .inputData label {
     position:absolute;
+    margin-bottom: 5px;
 }
